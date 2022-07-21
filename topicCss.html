@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - KoDe Help</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <style></style>
+</head>
+<body>
+    <header id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a><br><hr><br>
+        <a href="topicHtml.html">HTML</a>
+        <a href="topicCss.html">CSS</a>
+        <a href="topicJs.html">JavaScript</a>
+        <a href="topicGit.html">GitHub</a>
+        <a href="topicBootstrap5.html">Bootstrap 5</a>
+        <a href="topicReactJs.html">React JS</a><br><hr><br>
+        <a href="feedback.html">Feedback</a>
+        <a href="references.html">References</a>
+    </header>
+
+    <section id="navbar">
+        <div class="row mt-3 p-2 m-0">
+            <div class="col">
+                <p id="headerOne"><span onclick="openNav()"><i class="material-symbols-outlined">menu</i></span>&nbsp;<b>KoDe Web Development Help</b></p>
+            </div>
+            <div id="accButtons" class="col-6">
+                <button id="openAllSubtopics">expand all</button>
+                <button id="closeAllSubtopics">close all</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <div id="pageCssIcon" class="row text-center mb-3">
+            <p><i class="fa-brands fa-css3-alt"></i></p>
+        </div>
+
+        <section id="accordionGroup" class="row justify-content-md-center">
+            <button class="accordion rounded-top">CSS: An Introduction</button>
+                <div class="panel"><br>
+                <p>CSS is the language we use to style a Web page.</p><hr>
+                <h3>What is CSS?</h3><br>
+                <ul>
+                    <li>CSS stands for Cascading Style Sheets</li>
+                    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                    <li>External stylesheets are stored in CSS files</li>
+                </ul>
+                <hr>
+                <h3>CSS Demo - One HTML Page - Multiple Styles!</h3><br>
+                <p>Here we will show one HTML page displayed with four different stylesheets. Click on the "Stylesheet 1", "Stylesheet 2", "Stylesheet 3", "Stylesheet 4" links below to see the different styles:</p>
+                <img src="img\w3CssLayout.png" class="responsiveImage"><br><br>
+                <h3>Why Use CSS?</h3><br>
+                <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+                <h3>CSS Solved a Big Problem</h3><br>
+                <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+                <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
+                <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+                <p>When tags like <code>&lt;font&gt;</code>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+                <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+                <p>CSS removed the style formatting from the HTML page!</p>
+                <div id="noteBox" class="row">
+                    <div class="col-1 text-center">
+                          <i class="material-symbols-outlined">tips_and_updates</i>
+                      </div>
+                      <div class="col mt-3">
+                      <p>If you don't know what HTML is, we suggest that you read our HTML Tutorial.</p>
+                      </div>
+                </div><br>
+                <h3>CSS Saves a Lot of Work!</h3><br>
+                <p>The style definitions are normally saved in external .css files.</p>
+                <p>With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+                </div>
+
+            <button class="accordion">CSS Selectors</button>
+                <div class="panel"><br>
+                <p>A CSS selector selects the HTML element(s) you want to style.</p><hr>
+                <h3>CSS Selectors</h3>
+                <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+                <p>We can divide CSS selectors into five categories:</p>
+                <ul>
+                    <li>Simple selectors (select elements based on name, id, class)</li>
+                    <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                    <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                    <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                    <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+                </ul><br>
+                <h3>The CSS element Selector</h3>
+                <p>The element selector selects HTML elements based on the element name.</p>
+                <div class="border"><pre>
+    p {
+        text-align: center;
+        color: red;
+    }
+                </pre></div><br>
+                <h3>The CSS id Selector</h3>
+                <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+                <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+                <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+                <div class="border"><pre>
+    #para1 {
+        text-align: center;
+        color: red;
+    }
+                </pre></div><br>
+                <h3>The CSS class Selector</h3>
+                <p>The class selector selects HTML elements with a specific class attribute.</p>
+                <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+                <div class="border"><pre>
+    .center {
+        text-align: center;
+        color: red;
+    }
+                </pre></div><br>
+                <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+                <div class="border"><pre>
+    p.center {
+        text-align: center;
+        color: red;
+    }
+                </pre></div><br>
+                <p>HTML elements can also refer to more than one class.</p>
+                <div class="border"><pre>
+    &lt;p class="center large"&gt;This paragraph refers to two classes.&lt;/p&gt;
+                </pre></div><br>
+                <h3>The CSS Universal Selector</h3>
+                <p>The universal selector (*) selects all HTML elements on the page.</p>
+                <div class="border"><pre>
+    * {
+        text-align: center;
+        color: blue;
+    }
+                </pre></div><br>
+                <h3>The CSS Grouping Selector</h3>
+                <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
+                <p>Look at the following CSS code (the h1, h2, and p elements have the same style definitions):</p>
+                <div class="border"><pre>
+    h1 {
+        text-align: center;
+        color: red;
+    }
+                      
+    h2 {
+        text-align: center;
+        color: red;
+    }
+                      
+    p {
+        text-align: center;
+        color: red;
+    }
+                </pre></div><br>
+                <p>It will be better to group the selectors, to minimize the code.</p>
+                <p>To group selectors, separate each selector with a comma.</p>
+                <div class="border"><pre>
+    h1, h2, p {
+        text-align: center;
+        color: red;
+    }
+                </pre></div><br>
+                </div>
+
+            <button class="accordion">How to: CSS</button>
+                <div class="panel"><br>
+                    <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+                    <h3>Three Ways to Insert CSS</h3><br>
+                    <p>There are three ways of inserting a style sheet:</p>
+                    <ul>
+                        <li>External CSS</li>
+                        <li>Internal CSS</li>
+                        <li>Inline CSS</li>
+                    </ul>
+                    <h3>External CSS</h3><br>
+                    <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+                    <p>Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.</p>
+                    <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.</p>
+                    <p>The external .css file should not contain any HTML tags.</p>
+                    <p>Here is how the "mystyle.css" file looks:</p>
+                    <div id="warning" class="row">
+                        <div class="col-1 text-center">
+                              <i class="material-symbols-outlined">warning</i>
+                            </div>
+                            <div class="col mt-3">
+                            <p>Do not add a space between the property value and the unit:</p>
+                            <p>Incorrect (space): <code>&lt;margin-left: 20 px;&gt;</code></p> 
+                            <p>Correct (nospace): <code>&lt;margin-left: 20px;&gt;</code></p>
+                          </div>
+                    </div><br><hr>
+                    <h3>Internal CSS</h3><br>
+                    <p>An internal style sheet may be used if one single HTML page has a unique style.</p>
+                    <p>The internal style is defined inside the <code>&lt;style&gt;</code> element, inside the head section.</p>
+                    <h3>Inline CSS</h3><br>
+                    <p>An inline style may be used to apply a unique style for a single element.</p>
+                    <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+                    <h3>Cascading Order</h3><br>
+                    <p>What style will be used when there is more than one style specified for an HTML element?</p>
+                    <p>All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:</p>
+                    <ol>
+                        <li>Inline style (inside an HTML element)</li>
+                        <li>External and internal style sheets (in the head section)</li>
+                        <li>Browser default</li>
+                    </ol>
+                    <p>So, an inline style has the highest priority, and will override external and internal styles and browser defaults.</p>
+                    <p>In this video, Kevin Powell show you how to create an external stylesheet, how to link it to your HTML file, and the benefits of an external CSS file. I also look at the very basics of selectors, properties, and values.</p>
+                    <div class="videoContainer">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JVsI0fspik8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><br>
+                </div>
+            <button class="accordion">CSS Borders, Margins, and Padding</button>
+                <div class="panel"><br>
+                <h3>CSS Borders</h3>
+                <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p><br>
+                <h3>CSS Border Style</h3>
+                <p>The <code>&lt;border-style&gt;</code> property specifies what kind of border to display.</p>
+                <p>The following values are allowed:</p>
+                <ul>
+                    <li><code>&lt;dotted&gt;</code> - Defines a dotted border</li>
+                    <li><code>&lt;dashed&gt;</code> - Defines a dashed border</li>
+                    <li><code>&lt;solid&gt;</code> - Defines a solid border</li>
+                    <li><code>&lt;double&gt;</code> - Defines a double border</li>
+                    <li><code>&lt;groove&gt;</code> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+                    <li><code>&lt;ridge&gt;</code> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+                    <li><code>&lt;inset&gt;</code> - Defines a 3D inset border. The effect depends on the border-color value</li>
+                    <li><code>&lt;outset&gt;</code> - Defines a 3D outset border. The effect depends on the border-color value</li>
+                    <li><code>&lt;none&gt;</code> - Defines no border</li>
+                    <li><code>&lt;hidden&gt;</code> - Defines a hidden border</li>
+                </ul>
+                <p>The <code>&lt;border-style&gt;</code> property can have from one to four values (for the top border, right border, bottom border, and the left border).</p><br>
+                <h3>CSS Margins</h3>
+                <p>Margins are used to create space around elements, outside of any defined borders.</p>
+                <p>The CSS <code>&lt;margin&gt;</code> properties are used to create space around elements, outside of any defined borders.</p>
+                <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p><br>
+                <h3>Margin - Individual Sides</h3>
+                <p>CSS has properties for specifying the margin for each side of an element:</p>
+                <ul>
+                    <li><code>&lt;margin-top&gt;</code></li>
+                    <li><code>&lt;margin-right&gt;</code></li>
+                    <li><code>&lt;margin-bottom&gt;</code></li>
+                    <li><code>&lt;margin-left&gt;</code></li>
+                </ul>
+                <p>All the margin properties can have the following values:</p>
+                <ul>
+                    <li>auto - the browser calculates the margin</li>
+                    <li>length - specifies a margin in px, pt, cm, etc.</li>
+                    <li>% - specifies a margin in % of the width of the containing element</li>
+                    <li>inherit - specifies that the margin should be inherited from the parent element</li>
+                </ul>
+                <div id="noteBox" class="row">
+                    <div class="col-1 text-center">
+                          <i class="material-symbols-outlined">tips_and_updates</i>
+                      </div>
+                      <div class="col mt-3">
+                      <p>Negative values are allowed.</p>
+                      </div>
+                </div><br>
+                <div class="border"><pre>
+    p {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+    }
+                    </pre></div><br>
+                <h3>The auto Value</h3>
+                <p>You can set the margin property to <code>&lt;auto&gt;</code> to horizontally center the element within its container.</p>
+                <p>The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</p><br>
+                <div class="border"><pre>
+    div {
+        width: 300px;
+        margin: auto;
+        border: 1px solid red;
+    }
+                    </pre></div><br>
+                <h3>The inherit Value</h3>
+                <p>This example lets the left margin of the <code>&lt;p class="ex1"&gt;</code> element be inherited from the parent element (<code>&lt;div&gt;</code>):</p>
+                <div class="border"><pre>
+     div {
+        border: 1px solid red;
+        margin-left: 100px;
+    }
+                      
+    p.ex1 {
+        margin-left: inherit;
+        }
+                    </pre></div><br>
+                </div>
+
+            <button class="accordion">Css Box Model</button>
+                <div class="panel"><br>
+                <p>All HTML elements can be considered as boxes.</p>
+                <p>In CSS, the term "box model" is used when talking about design and layout.</p>
+                <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+                <img src="img\w3CssBoxModel.png" class="responsiveImage"><br><br>
+                <p>Explanation of the different parts:</p>
+                <ul>
+                    <li>Content - The content of the box, where text and images appear</li>
+                    <li>Padding - Clears an area around the content. The padding is transparent</li>
+                    <li>Border - A border that goes around the padding and content</li>
+                    <li>Margin - Clears an area outside the border. The margin is transparent</li>
+                </ul>
+                <p>The box model allows us to add a border around elements, and to define space between elements. </p>
+                <div class="border"><pre>
+                    div {
+                        width: 300px;
+                        border: 15px solid green;
+                        padding: 50px;
+                        margin: 20px;
+                      }
+                    </pre></div><br>
+                </div>
+
+            <button class="accordion">CSS Grid: Intro</button>
+                <div class="panel"><br>
+                <img src="img\w3CssGridLayout.png" class="responsiveImage"><br>
+                <h3>Grid Layout</h3>
+                <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p><br>
+                <h3>Grid Elements</h3>
+                <p>A grid layout consists of a parent element, with one or more child elements.</p>
+                <div class="border"><pre>
+                    &lt;div class="grid-container"&gt;
+                        &lt;div class="grid-item"&gt;1&lt;/div&gt;
+                        &lt;div class="grid-item"&gt;2&lt;/div&gt;
+                        &lt;div class="grid-item"&gt;3&lt;/div&gt;
+                        &lt;div class="grid-item"&gt;4&lt;/div&gt;
+                        &lt;div class="grid-item"&gt;5&lt;/div&gt;
+                        &lt;div class="grid-item"&gt;6&lt;/div&gt;
+                        &lt;div class="grid-item"&gt;7&lt;/div&gt;
+                        &lt;div class="grid-item"&gt;8&lt;/div&gt;
+                        &lt;div class="grid-item"&gt;9&lt;/div&gt;
+                    &lt;/div&gt;
+                    </pre></div><br>
+                <img src="img\w3CssGridElements.png" class="responsiveImage"><br>
+                <br>
+                <h3>Display Property</h3>
+                <p>An HTML element becomes a grid container when its <code>&lt;display&gt;</code> property is set to <code>&lt;grid&gt;</code> or <code>&lt;inline-grid&gt;</code>.</p>
+                <div class="border"><pre>
+                    .grid-container {
+                        display: grid;
+                      }
+                    </pre></div><br>
+                <div class="border"><pre>
+                    .grid-container {
+                        display: inline-grid;
+                      }
+                    </pre></div><br>
+                <p>All direct children of the grid container automatically become grid items.</p><br>
+                <h3>Grid Columns</h3>
+                <p>The vertical lines of grid items are called columns.</p>
+                <img src="img\w3CssGridColumns.png" class="responsiveImage"><br>
+                <h3>Grid Rows</h3>
+                <p>The horizontal lines of grid items are called rows.</p>
+                <img src="img\w3CssGridRows.png" class="responsiveImage"><br>
+                <h3>Grid Gaps</h3>
+                <p>The spaces between each column/row are called gaps.</p>
+                <img src="img\w3CssGridGaps.png" class="responsiveImage"><br>
+                <p>You can adjust the gap size by using one of the following properties:</p>
+                <ul>
+                    <li><code>&lt;column-gap&gt;</code></li>
+                    <li><code>&lt;row-gap&gt;</code></li>
+                    <li><code>&lt;gap&gt;</code></li>
+                </ul><br>
+                <div class="border"><pre>
+                    .grid-container {
+                        display: grid;
+                        gap: 50px 100px;
+                      }
+                    </pre></div><br>
+                <h3>Grid Lines</h3>
+                <p>The lines between columns are called column lines.</p>
+                <p>The lines between rows are called row lines.</p>
+                <img src="img\w3CssGridLines.png" class="responsiveImage"><br>
+                <p>Refer to line numbers when placing a grid item in a grid container:</p>
+                <div class="border"><pre>
+                    .item1 {
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                      }
+                    </pre></div><br>
+                <div class="border"><pre>
+                    .item1 {
+                        grid-row-start: 1;
+                        grid-row-end: 3;
+                      }
+                    </pre></div><br>                  
+                </div>
+
+            <button class="accordion">CSS Grid: Container</button>
+                <div class="panel"><br>
+                <h3>Grid Container</h3>
+                <img src="img\w3CssGridContainer.png" class="responsiveImage"><br>
+                <p>To make an HTML element behave as a grid container, you have to set the <code>&lt;display&gt;</code> property to <code>&lt;grid&gt;</code> or <code>&lt;inline-grid&gt;</code>.</p>
+                <p>Grid containers consist of grid items, placed inside columns and rows.</p><br>
+                <h3>The grid-template-columns Property</h3>
+                <p>The <code>&lt;grid-template-columns&gt;</code> property defines the number of columns in your grid layout, and it can define the width of each column.</p>
+                <img src="img\w3CssGridTempRow.png" class="responsiveImage"><br>
+                <p>The value is a space-separated-list, where each value defines the width of the respective column.</p>
+                <p>If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or "auto" if all columns should have the same width.</p>
+                <div class="border"><pre>
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: auto auto auto auto;
+                    }
+                    </pre></div><br>
+                <div id="noteBox" class="row">
+                    <div class="col-1 text-center">
+                          <i class="material-symbols-outlined">tips_and_updates</i>
+                      </div>
+                      <div class="col mt-3">
+                      <p>If you have more than 4 items in a 4 columns grid, the grid will automatically add a new row to put the items in.</p>
+                      </div>
+                </div><br>
+                <p>The <code>&lt;grid-template-columns&gt;</code> property can also be used to specify the size (width) of the columns.</p>
+                <div class="border"><pre>
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: 80px 200px auto 40px;
+                    }
+                    </pre></div><br>
+                <h3>The grid-template-rows Property</h3>
+                <p>The <code>&lt;grid-template-rows&gt;</code> property defines the height of each row.</p>
+                <p>The value is a space-separated-list, where each value defines the height of the respective row:</p>
+                <div class="border"><pre>
+                    .grid-container {
+                        display: grid;
+                        grid-template-rows: 80px 200px;
+                    }
+                    </pre></div><br>
+                <h3>The justify-content Property</h3>
+                <p>The <code>&lt;justify-content&gt;</code> property is used to align the whole grid inside the container.</p>
+                <img src="img\w3CssJustifyContent.png" class="responsiveImage"><br>
+                <div id="noteBox" class="row">
+                    <div class="col-1 text-center">
+                          <i class="material-symbols-outlined">tips_and_updates</i>
+                      </div>
+                      <div class="col mt-3">
+                      <p>The grid's total width has to be less than the container's width for the <code>&lt;justify-content&gt;</code> property to have any effect.</p>
+                      </div>
+                </div><br>
+                <h3>The align-content Property</h3>
+                <p><code>&lt;align-content&gt;</code> property is used to vertically align the whole grid inside the container.</p>
+                <img src="img\w3CssAlignContent.png" class="responsiveImage"><br>
+                <div id="noteBox" class="row">
+                    <div class="col-1 text-center">
+                          <i class="material-symbols-outlined">tips_and_updates</i>
+                      </div>
+                      <div class="col mt-3">
+                      <p>The grid's total height has to be less than the container's height for the <code>&lt;align-content&gt;</code> property to have any effect.</p>
+                      </div>
+                </div><br>
+                </div>
+
+            <button class="accordion rounded-bottom">CSS Grid: Item</button>
+                <div class="panel"><br>
+                <img src="img\w3GridItem.png" class="responsiveImage"><br>
+                <h3>Child Elements (Items)</h3>
+                <p>A grid container contains grid items.</p>
+                <p>By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows.</p>
+                <h3>The grid-column Property:</h3>
+                <p>The <code>&lt;grid-column&gt;</code> property defines on which column(s) to place an item.</p>
+                <p>You define where the item will start, and where the item will end.</p>
+                <img src="img\w3GridColumn.png" class="responsiveImage"><br>
+                <div id="noteBox" class="row">
+                    <div class="col-1 text-center">
+                          <i class="material-symbols-outlined">tips_and_updates</i>
+                      </div>
+                      <div class="col mt-3">
+                      <p>The <code>&lt;grid-column&gt;</code> property is a shorthand property for the <code>&lt;grid-column-start&gt;</code> and the <code>&lt;grid-column-end&gt;</code> properties.</p>
+                      </div>
+                </div><br>
+                <p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span.</p>
+                <h3>The grid-row Property:</h3>
+                <p>The <code>&lt;grid-row&gt;</code> property defines on which row to place an item.</p>
+                <p>You define where the item will start, and where the item will end.</p>
+                <img src="img\w3GridRow.png" class="responsiveImage"><br>
+                <div id="noteBox" class="row">
+                    <div class="col-1 text-center">
+                          <i class="material-symbols-outlined">tips_and_updates</i>
+                      </div>
+                      <div class="col mt-3">
+                      <p>The <code>&lt;grid-row&gt;</code> property is a shorthand property for the <code>&lt;grid-row-start&gt;</code> and the <code>&lt;grid-row-end&gt;</code> properties.</p>
+                      </div>
+                </div><br>
+                <p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</p>
+                <h3>The grid-area Property</h3>
+                <p>The <code>&lt;grid-area&gt;</code> property can be used as a shorthand property for the <code>&lt;grid-row-start&gt;</code>, <code>&lt;grid-column-start&gt;</code>, <code>&lt;grid-row-end&gt;</code> and the <code>&lt;grid-column-end&gt;</code> properties.</p>
+                <img src="img\w3GridArea.png" class="responsiveImage"><br>
+                <h3>Naming Grid Items</h3>
+                <p>The <code>&lt;grid-area&gt;</code> property can also be used to assign names to grid items.</p>
+                <img src="img\w3NamingGridItems.png" class="responsiveImage"><br>
+                <p>Named grid items can be referred to by the <code>&lt;grid-template-areas&gt;</code> property of the grid container.</p>
+                <p>Each row is defined by apostrophes (' ')</p>
+                <p>The columns in each row is defined inside the apostrophes, separated by a space.</p>
+                <div id="noteBox" class="row">
+                    <div class="col-1 text-center">
+                          <i class="material-symbols-outlined">tips_and_updates</i>
+                      </div>
+                      <div class="col mt-3">
+                      <p>A period sign represents a grid item with no name.</p>
+                      </div>
+                </div><br>
+                </div>                    
+        </section>
+        
+    </div>
+
+    <footer id="footerMain" class="row justify-content-md-center m-0">
+        <div class="row mt-3 p-2 m-0">
+            <p></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6e0e3f1ae2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

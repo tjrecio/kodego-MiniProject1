@@ -1,0 +1,408 @@
+body {
+    background-color:rgb(34, 34, 34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(197, 197, 197);
+    cursor: default;
+}
+
+#navbar {
+  background-color: rgb(34, 34, 34);
+  z-index: +10;
+}
+
+#headerOne {
+  background-color: rgb(34, 34, 34);
+  font-size: clamp(11px, 2.2vw, 20px);
+  z-index: +10;
+}
+
+#searchBoxMain {
+  font-size: clamp(12px, 2vw, 15px);
+}
+
+#buttonMainSet{
+  justify-content: center;
+}
+
+#pageHtmlIcon {
+  background-color: orangered;
+  font-size: 40px;
+  width: 95px;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 500%;
+}
+
+#pageCssIcon {
+  background-color: blue;
+  font-size: 40px;
+  width: 95px;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 500%;
+}
+
+#pageJsIcon {
+  background-color: rgb(252, 220, 0);
+  font-size: 40px;
+  width: 95px;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 500%;
+}
+
+#pageGithubIcon {
+  background-color: darkgreen;
+  font-size: 40px;
+  width: 95px;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 500%;
+}
+
+#pageBootstrap5Icon {
+  background-color: purple;
+  font-size: 40px;
+  width: 95px;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 500%;
+}
+
+#pageReactJsIcon {
+  background-color: rgb(56, 125, 255);
+  font-size: 40px;
+  width: 95px;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 500%;
+}
+
+#iconsMain{
+  font-size: 100px;
+}
+
+#mySidenav {
+  background-color: rgb(34, 34, 34);
+  z-index: +20;
+}
+
+#mainBtnHtml{
+  transition: 0.3s;
+}
+#mainBtnHtml:hover{
+  background-color: orangered;
+}
+
+#mainBtnCss{
+  transition: 0.3s;
+}
+#mainBtnCss:hover{
+  background-color: blue;
+}
+
+#mainBtnJs{
+  transition: 0.3s;
+}
+#mainBtnJs:hover{
+  background-color: rgb(252, 220, 0);
+}
+
+#mainBtnGithub{
+  transition: 0.3s;
+}
+#mainBtnGithub:hover{
+  background-color: darkgreen;
+}
+
+#mainBtnBootstrap5{
+  transition: 0.3s;
+}
+#mainBtnBootstrap5:hover{
+  background-color: purple;
+}
+
+#mainBtnReactJs{
+  transition: 0.3s;
+}
+#mainBtnReactJs:hover{
+  background-color: rgb(56, 125, 255);
+}
+
+/*Google material icons/symbols*/
+.material-symbols-outlined {
+  vertical-align: middle;
+  display: inline-block;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/*Tip Box*/
+#noteBox {
+  background-color: rgb(247, 255, 137);
+  font-size: 13px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Warning*/
+#warning {
+  background-color: rgb(252, 170, 170);
+  font-size: 13px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Under Construction*/
+#underConst {
+  background-color: orangered;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Redirect to another site*/
+#reDirect {
+  background-color: gold;
+  color:rgb(34, 34, 34);
+  font-size: 13px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+#accButtons {
+  color: rgb(34, 34, 34);
+  text-align: right;
+}
+
+#openAllSubtopics {
+  background-color: rgb(34, 34, 34);
+  border: 1px solid;
+  border-radius: 5px;
+  color: rgb(25, 112, 252);
+  font-size: 13px;
+  text-align: right;
+  transition: 0.2s;
+}
+
+#openAllSubtopics:hover {
+  background-color: rgb(25, 112, 252);
+  border: 1px solid rgb(25, 112, 252);
+  color: white;
+}
+
+#closeAllSubtopics {
+  background-color: rgb(34, 34, 34);
+  border: 1px solid;
+  border-radius: 5px;
+  color: rgb(25, 112, 252);
+  font-size: 13px;
+  text-align: right;
+  transition: 0.2s;
+}
+
+#closeAllSubtopics:hover {
+  background-color: rgb(25, 112, 252);
+  border: 1px solid rgb(25, 112, 252);
+  color: white;
+}
+
+#feedbackBtn {
+  background-color: rgb(51, 51, 51);
+  border: 1px solid;
+  border-radius: 5px;
+  color: rgb(25, 112, 252);
+  font-size: 13px;
+  text-align: right;
+  transition: 0.2s;
+}
+
+#feedbackBtn:hover {
+  background-color: rgb(25, 112, 252);
+  border: 1px solid rgb(25, 112, 252);
+  color: white;
+}
+
+#section3main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonMain {
+  background-color: rgb(51, 51, 51);
+  border: none;
+  color: rgb(197, 197, 197);
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 6px 4px;
+  cursor: pointer;
+  width: 32%; height: 10em;
+}
+
+#feedbackForm {
+  text-align: center;
+  padding: 0 18px;
+  background-color: rgb(51, 51, 51);
+  font-size: clamp(12px, 2.2vw, 16px);
+  color:rgb(197, 197, 197);
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/*responsive images*/
+.responsiveImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*responsive YouTube videos*/
+.videoContainer {
+  overflow: hidden;
+  position: relative;
+  width:100%;
+}
+
+.videoContainer::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/**/
+
+.buttonHelp1 {
+  background-color: rgb(51, 51, 51);
+  border: none;
+  color: rgb(197, 197, 197);
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  cursor: pointer;
+  width: 200px; height: 5em;
+}
+
+.buttonHelp2 {
+  background-color: rgb(51, 51, 51);
+  border: none;
+  color: rgb(197, 197, 197);
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  cursor: pointer;
+  width: 200px; height: 5em;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*floating sidebar*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(34, 34, 34);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px;
+    margin-left: 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(197, 197, 197);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #ffffff;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+
+/* accordion */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgb(51, 51, 51);
+  color: rgb(197, 197, 197);
+  cursor: pointer;
+  padding: 18px;
+  width: 85em;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: rgb(71, 70, 70);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  font-size: clamp(12px, 2.2vw, 16px);
+  color:rgb(34, 34, 34);
+  display: none;
+  overflow: hidden;
+}
+
+.h3{
+  font-size: clamp(10px, 2.2vw, 14px);
+  color:rgb(34, 34, 34);
+}
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - KoDe Help</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <style></style>
+</head>
+<body>
+    <header id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a><br><hr><br>
+        <a href="topicHtml.html">HTML</a>
+        <a href="topicCss.html">CSS</a>
+        <a href="topicJs.html">JavaScript</a>
+        <a href="topicGit.html">GitHub</a>
+        <a href="topicBootstrap5.html">Bootstrap 5</a>
+        <a href="topicReactJs.html">React JS</a><br><hr><br>
+        <a href="feedback.html">Feedback</a>
+        <a href="references.html">References</a>
+    </header>
+
+    <section id="navbar">
+        <div class="row mt-3 p-2 m-0">
+            <div class="col">
+                <p id="headerOne"><span onclick="openNav()"><i class="material-symbols-outlined">menu</i></span>&nbsp;<b>KoDe Web Development Help</b></p>
+            </div>
+            <div id="accButtons" class="col-6">
+                <button id="openAllSubtopics">expand all</button>
+                <button id="closeAllSubtopics">close all</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <div id="pageGithubIcon" class="row text-center mb-3">
+            <p><i class="fa-brands fa-github"></i></p>
+        </div>
+
+        <section id="accordionGroup" class="row rounded-3 justify-content-md-center">
+            
+            <div id="underConst" class="row">
+                <div class="col-1 text-center">
+                      <i class="material-symbols-outlined">construction</i>
+                </div>
+                <div class="col mt-3">
+                <p>Changes are happening behind the scenes. Please check back later.</p>
+                </div>
+            </div><br>  
+            
+            <div id="reDirect" class="row m-1">
+                <div class="col-1 text-center">
+                    <i class="material-symbols-outlined">language</i>
+                </div>
+                <div class="col mt-3">
+                <p>You may instead check their <a href="https://github.com" target="_blank">page</a> to know more about this subject (this will open a new tab).</p>
+                </div>
+            </div><br>    
+
+        </section>
+        
+    </div>
+
+    <footer id="footerMain" class="row justify-content-md-center m-0">
+        <div class="row mt-3 p-2 m-0">
+            <p></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6e0e3f1ae2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

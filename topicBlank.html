@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - KoDe Help</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <style></style>
+</head>
+<body>
+    <header id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a><br><hr><br>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">GitHub</a>
+        <a href="#">Bootstrap 5</a>
+        <a href="#">React JS</a><br><hr><br>
+        <a href="#">Feedback</a>
+        <a href="#">References</a>
+    </header>
+
+    <section id="navbar">
+        <div class="row mt-3 p-2 m-0">
+            <div class="col">
+                <p id="headerOne"><span onclick="openNav()"><i class="material-symbols-outlined">menu</i></span>&nbsp;<b>KoDe Web Development Help</b></p>
+            </div>
+            <div id="accButtons" class="col-6">
+                <button id="openAllSubtopics">expand all</button>
+                <button id="closeAllSubtopics">close all</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <section id="sectionTwoMain" class="row text-center">
+            <div class="row p-4">
+                <div class="col-2"></div>
+                <div class="col">
+                    <p>How can we help you?</p>
+                    <div class="input-group">
+                        <input id="searchBoxMain" type="search" class="form-control rounded-left" placeholder="Describe your issue..." aria-label="Search" aria-describedby="search-addon"/>
+                        <button type="button rounded-2" class="btn btn-outline-primary">search</button>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </section>
+
+        <section id="accordionGroup" class="row justify-content-md-center">
+            <button class="accordion rounded-top">subtopic 1</button>
+                <div class="panel"><br>
+                <p>History <code>test</code> ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                </div>
+
+            <button class="accordion">subtopic 2</button>
+                <div class="panel"><br>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                </div>
+
+            <button class="accordion">subtopic 3</button>
+                <div class="panel"><br>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                </div>
+            <button class="accordion">subtopic 4</button>
+                <div class="panel"><br>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                </div>
+
+            <button class="accordion">subtopic 5</button>
+                <div class="panel"><br>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                </div>
+
+            <button class="accordion">subtopic 6</button>
+                <div class="panel"><br>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                </div>
+
+            <button class="accordion">subtopic 7</button>
+                <div class="panel"><br>
+                <p>Lorem...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                </div>
+
+            <button class="accordion rounded-bottom">subtopic 8</button>
+                <div class="panel"><br>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                <p>Lorem ipsum...</p>
+                </div>                    
+        </section>
+        
+    </div>
+
+    <footer id="footerMain" class="row justify-content-md-center m-0">
+        <div class="row mt-3 p-2 m-0">
+            <p></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6e0e3f1ae2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

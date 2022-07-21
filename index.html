@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoDe Web Development Help</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #section3main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+
+    <header id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a><br><hr><br>
+        <a href="topicHtml.html">HTML</a>
+        <a href="topicCss.html">CSS</a>
+        <a href="topicJs.html">JavaScript</a>
+        <a href="topicGit.html">GitHub</a>
+        <a href="topicBootstrap5.html">Bootstrap 5</a>
+        <a href="topicReactJs.html">React JS</a><br><hr><br>
+        <a href="feedback.html">Feedback</a>
+        <a href="references.html">References</a>
+    </header>
+
+    <section id="section1main" class="row mt-3 p-2 m-0">
+        <div class="row">
+            <p id="headerOne"><span onclick="openNav()"><i class="material-icons">menu</i></span>&nbsp;<b>KoDe Web Development Help</b></p>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <section id="section2main" class="row text-center justify-content-md-center">
+            <div class="row p-4">
+                <div class="col-2"></div>
+                <div class="col">
+                    <p>How can we help you?</p>
+                    <div class="input-group">
+                        <input id="searchBoxMain" type="search" class="form-control rounded-left" placeholder="Describe your issue..." aria-label="Search" aria-describedby="search-addon"/>
+                        <button type="button rounded-2" class="btn btn-outline-primary">search</button>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </section>
+        
+        <div id="buttonMainSet" class="row">
+            <button id="mainBtnHtml" class="buttonMain rounded-3" onclick="document.location='topicHtml.html'"><i id="iconsMain" class="fa-brands fa-html5"></i></button>
+            <button id="mainBtnCss" class="buttonMain rounded-3" onclick="document.location='topicCss.html'"><i id="iconsMain" class="fa-brands fa-css3-alt"></i></button>
+            <button id="mainBtnJs" class="buttonMain rounded-3" onclick="document.location='topicJs.html'"><i id="iconsMain" class="fa-brands fa-js-square"></i></button>
+            <button id="mainBtnGithub" class="buttonMain rounded-3" onclick="document.location='topicGit.html'"><i id="iconsMain" class="fa-brands fa-github"></i></button>
+            <button id="mainBtnBootstrap5" class="buttonMain rounded-3" onclick="document.location='topicBootstrap5.html'"><i id="iconsMain" class="fa-brands fa-bootstrap"></i></button>
+            <button id="mainBtnReactJs" class="buttonMain rounded-3" onclick="document.location='topicReactJs.html'"><i id="iconsMain" class="fa-brands fa-react"></i></button>
+        </div>
+
+        <section id="section4main" class="row text-center justify-content-md-center mt-5 mb-3">
+            <p>Need more help?<br>Try these next steps:</p>
+            <div class="col-6">
+                <button class="buttonHelp1 rounded-3" onclick="document.location='https://discord.com/'">Ask our Discord Community</button>
+            </div>
+            <div class="col-6">
+                <button class="buttonHelp2 rounded-3" onclick="document.location='feedback.html'">Contact Us</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6e0e3f1ae2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
